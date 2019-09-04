@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회 원 가 입"
+            android:textColor="#fff"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        이  름   : "
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력하세요."
+            android:textSize="15dp"
+            android:id="@+id/edtJoinName"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        아 이 디  : "
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="  아이디를 입력하세요."
+            android:textSize="15dp"
+            android:id="@+id/edtJoinId"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="left"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복확인"
+            android:textSize="9dp"
+            android:id="@+id/btnIdtest"
+            android:background="#00ffffff"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        PassWord: "
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="패스워드를 입력하세요."
+            android:id="@+id/edtJoinPw"
+            android:textSize="15dp"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:password="true"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        PassWord 확인 : "
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="동일한 패스워드를 입력하세요."
+            android:textSize="15dp"
+            android:id="@+id/edtReJoinPw"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:password="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="        Email : "
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email을 입력하세요."
+            android:textSize="15dp"
+            android:id="@+id/edtJoinEmail"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="         전화번호 : "
+            android:textColor="#fff"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전화번호를 입력하세요."
+            android:textSize="15dp"
+            android:id="@+id/edtJoinPhone"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확 인"
+            android:layout_margin="20dp"
+            android:textSize="25dp"
+            android:id="@+id/btnOk"
+            android:background="#00ffffff"
+            android:textColor="#fff"
+            />
+        <!--android:background="#00ffffff" 버튼 투명하게-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취 소"
+            android:id="@+id/btnNo"
+            android:textSize="25dp"
+            android:background="#00ffffff"
+            android:textColor="#fff"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
